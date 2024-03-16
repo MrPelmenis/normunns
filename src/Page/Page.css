@@ -1,0 +1,93 @@
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-1px); }
+    100% { transform: translateX(0); }
+}
+
+.overflow-wrap {
+    overflow-wrap: break-word;
+}
+
+.shake:hover {
+    animation: shake 0.3s ease-in-out;
+}
+
+.languageWidget{
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.languageWidget:hover{
+    background-color: #ececec;
+}
+
+.projectShowcase {
+    transition: 300ms;
+    transform-origin: top;
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.projectShowcase:hover .slowAppearingText {
+    animation: appear 300ms ease forwards;
+}
+
+.projectShowcase.tapped .slowAppearingText {
+    animation: appear 300ms ease forwards;
+}
+
+
+.testButton{
+    border: 1px solid red;
+}
+
+.testButton:active{
+    background-color: red;
+}
+
+
+
+.slowAppearingText {
+    opacity: 0;
+    transform-origin: top;
+}
+
+
+.appear {
+    opacity: 0;
+    height: 0;
+}
+
+.show-appear:hover .appear {
+    animation: appear 500ms ease forwards;
+}
+
+
+
+
+@keyframes appearAnimation {
+    0% {
+        opacity: 0;
+        height: 0; 
+        }
+    100% {
+        opacity: 1;
+        height: 120%;
+    }
+}
+
+
+
+.underlineOnHover:hover{
+    text-decoration: underline;
+}
+
+.projectImage{
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+}

@@ -1,0 +1,17 @@
+a.sizeOnHover {
+    transition: transform 300ms, top 3000ms;
+}
+  
+a.sizeOnHover:hover {
+    position: relative;
+    top: -3px;
+}
+
+.coolFont{
+  font-family: 'Arial';
+  text-align: center;
+  font-weight: bold;
+  color: #222831;
+  line-break: strict;
+  transition: font-size 0.3s ease;
+}
